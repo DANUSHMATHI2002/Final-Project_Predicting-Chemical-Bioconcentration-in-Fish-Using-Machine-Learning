@@ -23,7 +23,7 @@ Predicts whether a chemical is likely to **bioaccumulate to dangerous levels in 
 
 ## Research Question
 
-> Which machine learning model — **Logistic Regression**, **Random Forest**, or **XGBoost** — best detects potentially hazardous chemicals from the QSAR fish bioconcentration dataset, judged by F1-score? How do the three models differ in trading off **recall** (catching true dangers) against **precision** (avoiding false alarms)?
+> Using the QSAR fish bioconcentration dataset, which machine learning model performs best based on F1-score for detecting potentially hazardous chemicals? Furthermore, how do Logistic Regression, Random Forest, and XGBoost differ when weighing the trade-off between catching truly dangerous compounds (recall) and avoiding false alarms (precision)?
 
 ---
 
