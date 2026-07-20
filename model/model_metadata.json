@@ -1,0 +1,171 @@
+{
+  "feature_cols": [
+    "nHM",
+    "piPC09",
+    "PCD",
+    "X2Av",
+    "MLOGP",
+    "ON1V",
+    "N-072",
+    "B02[C-N]",
+    "F04[C-O]"
+  ],
+  "deployed_model": "Random Forest",
+  "deployed_model_file": "saved_model_deployed.pkl",
+  "selection_rule": "highest F1 on the held-out test set, among all successfully trained models",
+  "class_balance": {
+    "safe": 255,
+    "dangerous": 524,
+    "total": 779
+  },
+  "metrics_summary": {
+    "Logistic Regression": {
+      "best_params": {
+        "clf__C": 1,
+        "clf__penalty": "l1"
+      },
+      "Accuracy": 0.75,
+      "Precision": 0.8235294117647058,
+      "Recall": 0.8,
+      "F1": 0.8115942028985508,
+      "ROC_AUC": 0.7478991596638656,
+      "PR_AUC": 0.8246438037121124,
+      "confusion_matrix": [
+        [
+          33,
+          18
+        ],
+        [
+          21,
+          84
+        ]
+      ]
+    },
+    "Random Forest": {
+      "best_params": {
+        "clf__max_depth": null,
+        "clf__max_features": "sqrt",
+        "clf__min_samples_leaf": 2,
+        "clf__n_estimators": 200
+      },
+      "Accuracy": 0.7692307692307693,
+      "Precision": 0.8415841584158416,
+      "Recall": 0.8095238095238095,
+      "F1": 0.8252427184466019,
+      "ROC_AUC": 0.8231559290382819,
+      "PR_AUC": 0.9020312198325953,
+      "confusion_matrix": [
+        [
+          35,
+          16
+        ],
+        [
+          20,
+          85
+        ]
+      ]
+    },
+    "XGBoost": {
+      "best_params": {
+        "clf__colsample_bytree": 0.8,
+        "clf__learning_rate": 0.05,
+        "clf__max_depth": 5,
+        "clf__n_estimators": 400,
+        "clf__subsample": 0.8
+      },
+      "Accuracy": 0.7628205128205128,
+      "Precision": 0.8469387755102041,
+      "Recall": 0.7904761904761904,
+      "F1": 0.8177339901477833,
+      "ROC_AUC": 0.8211017740429506,
+      "PR_AUC": 0.896857625646361,
+      "confusion_matrix": [
+        [
+          36,
+          15
+        ],
+        [
+          22,
+          83
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "nHM": 0.07950373539369965,
+    "piPC09": 0.10989681274101967,
+    "PCD": 0.12401033993990981,
+    "X2Av": 0.124544688335799,
+    "MLOGP": 0.17761084761751633,
+    "ON1V": 0.21639325869971782,
+    "N-072": 0.014784443832332673,
+    "B02[C-N]": 0.03395321163144885,
+    "F04[C-O]": 0.11930266180855614
+  },
+  "feature_stats": {
+    "nHM": {
+      "min": 0.0,
+      "max": 12.0,
+      "mean": 1.754813863928113,
+      "median": 1.0,
+      "std": 1.9858656876979828
+    },
+    "piPC09": {
+      "min": 0.0,
+      "max": 9.316,
+      "mean": 3.4676161745827985,
+      "median": 4.263,
+      "std": 2.983777914486452
+    },
+    "PCD": {
+      "min": 0.0,
+      "max": 5.9,
+      "mean": 1.550821566110398,
+      "median": 1.4,
+      "std": 0.9587075397553012
+    },
+    "X2Av": {
+      "min": 0.09,
+      "max": 2.23,
+      "mean": 0.2368806161745828,
+      "median": 0.2,
+      "std": 0.1493185889268503
+    },
+    "MLOGP": {
+      "min": -1.96,
+      "max": 8.32,
+      "mean": 3.2017458279845954,
+      "median": 3.13,
+      "std": 1.5957019011775095
+    },
+    "ON1V": {
+      "min": 0.08,
+      "max": 7.19,
+      "mean": 1.5102952503209242,
+      "median": 1.27,
+      "std": 0.8347525779790723
+    },
+    "N-072": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.18613607188703465,
+      "median": 0.0,
+      "std": 0.5019374667577554
+    },
+    "B02[C-N]": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.42362002567394097,
+      "median": 0.0,
+      "std": 0.4944491254882986
+    },
+    "F04[C-O]": {
+      "min": 0.0,
+      "max": 25.0,
+      "mean": 3.5853658536585367,
+      "median": 2.0,
+      "std": 4.430420832624579
+    }
+  },
+  "trained_at": "2026-07-16T10:16:58.279387"
+}
