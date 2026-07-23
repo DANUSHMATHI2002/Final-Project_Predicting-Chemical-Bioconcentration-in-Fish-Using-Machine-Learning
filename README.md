@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AquaTox AI — Fish Toxicity Prediction Platform
 
 An aquarium-themed web app that predicts whether a chemical is likely to
