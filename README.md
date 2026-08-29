@@ -180,7 +180,7 @@ A full-stack web application built on top of the trained model, so the analysis 
 - Dashboard tab: total tests run, Safe/Dangerous split, most-tested compounds, confidence trend
 - Full test history with search/filter, downloadable PDF report per test, CSV export of all history
 - The deployed model is **chosen automatically, not hardcoded** — `model/train.py` trains all three candidates and deploys whichever scores highest F1 on the held-out test set. If you retrain and a different model wins, it gets deployed instead, and every part of the app (API, PDF reports, dashboard) picks up the new name and its own feature-importance ranking automatically. Check the **Model info** tab or `model_metadata.json` to see which one is currently live.
-
+  
 **Screenshots:**
 
 | Prediction — Safe | Prediction — Dangerous |
@@ -192,7 +192,6 @@ A full-stack web application built on top of the trained model, so the analysis 
 | ![Dashboard overview](dashboard/screenshots/dashboard-overview.png) | ![Model info tab](dashboard/screenshots/model-info.png) |
 
 
-*(Drop your own screenshots into `dashboard/screenshots/` using these filenames, or edit the paths above to match whatever you save. Even 2–3 screenshots — a Safe result, a Dangerous result, and the Dashboard overview — cover the essentials.)*
 
 **What's illustrative, not modelled:** the organ/skeleton visualization isn't a second trained model. The binary Safe/Dangerous prediction is real; which organs light up (gills, liver, kidneys, heart) follows a simple, clearly-labelled rule based on the input profile, for educational value.
 
