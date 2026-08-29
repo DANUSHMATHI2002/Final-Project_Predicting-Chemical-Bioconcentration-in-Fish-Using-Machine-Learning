@@ -191,9 +191,6 @@ A full-stack web application built on top of the trained model, so the analysis 
 |---|---|
 | ![Dashboard overview](dashboard/screenshots/dashboard-overview.png) | ![Model info tab](dashboard/screenshots/model-info.png) |
 
-| Test history | PDF report |
-|---|---|
-| ![History table](dashboard/screenshots/history.png) | ![PDF export](dashboard/screenshots/pdf-report.png) |
 
 *(Drop your own screenshots into `dashboard/screenshots/` using these filenames, or edit the paths above to match whatever you save. Even 2–3 screenshots — a Safe result, a Dangerous result, and the Dashboard overview — cover the essentials.)*
 
